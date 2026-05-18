@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Готовые образы — Earthwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Подобранные образы для мужчин и женщин: одежда и украшения в единой палитре.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="looks.html" class="nav__link nav__link--active">Образы</a>
+                <a href="orders.html" class="nav__link">Заказы</a>
+                <a href="cart.html" class="nav__link">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section__title">Готовые образы</h1>
+            <p class="section__lead section__lead--narrow">
+                Каждый образ — это комплект из одежды и украшений, подобранный стилистом.
+                Вы можете добавить образ целиком в корзину, а затем при желании изменить отдельные позиции в каталоге.
+            </p>
+
+            <div class="look-grid">
+                <!-- Женский образ -->
+                <article class="look-card">
+                    <div class="look-card__media">
+                        <div class="photo-frame photo-frame--tall">
+                            <img src="media/Шоколадный латте.png" alt="Женский образ «Кофе в городе»"
+                                class="photo-frame__placeholder">
+                        </div>
+                    </div>
+                    <div class="look-card__content">
+                        <h2 class="look-card__title">«Кофе в городе» (женский)</h2>
+                        <p class="look-card__tagline">тёплые коричневые и бежевые оттенки</p>
+                        <ul class="look-card__list">
+                            <li>Костюм «Шоколадный латте» (жакет + широкие брюки)</li>
+                            <li>Топ молочного оттенка</li>
+                            <li>Серьги‑кольца «Тёплый металл»</li>
+                            <li>Кожаная сумка в оттенке капучино</li>
+                        </ul>
+                        <p class="look-card__price">Образ целиком: <strong>18 990 ₽</strong></p>
+                        <button class="btn btn--primary" data-add-to-cart data-id="look1"
+                            data-name="Образ «Кофе в городе» (женский)" data-price="18990">
+                            Добавить образ в корзину
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Женский вечерний образ -->
+                <article class="look-card">
+                    <div class="look-card__media">
+                        <div class="photo-frame photo-frame--tall">
+                            <img src="media/Винное.jpeg" alt="Женский образ «Вечер в театре»"
+                                class="photo-frame__placeholder">
+                        </div>
+                    </div>
+                    <div class="look-card__content">
+                        <h2 class="look-card__title">«Вечер в театре» (женский)</h2>
+                        <p class="look-card__tagline">глубокий синий и акцентный бордовый</p>
+                        <ul class="look-card__list">
+                            <li>Платье миди «Винное»</li>
+                            <li>Пальто цвета тёмного индиго</li>
+                            <li>Колье «Лесной мох»</li>
+                            <li>Клатч с металлическими деталями</li>
+                        </ul>
+                        <p class="look-card__price">Образ целиком: <strong>21 490 ₽</strong></p>
+                        <button class="btn btn--primary" data-add-to-cart data-id="look2"
+                            data-name="Образ «Вечер в театре» (женский)" data-price="21490">
+                            Добавить образ в корзину
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Мужской образ -->
+                <article class="look-card">
+                    <div class="look-card__media">
+                        <div class="photo-frame photo-frame--tall">
+                            <img src="media/Песочный берег.jpeg" alt="Мужской образ «Городской хаки»"
+                                class="photo-frame__placeholder">
+                        </div>
+                    </div>
+                    <div class="look-card__content">
+                        <h2 class="look-card__title">«Городской хаки» (мужской)</h2>
+                        <p class="look-card__tagline">спокойные природные тона</p>
+                        <ul class="look-card__list">
+                            <li>Брюки «Хаки‑сити»</li>
+                            <li>Футболка базовая молочного оттенка</li>
+                            <li>Рубашка «Глубокий индиго» нараспашку</li>
+                            <li>Браслет «Глубокий синий»</li>
+                        </ul>
+                        <p class="look-card__price">Образ целиком: <strong>17 490 ₽</strong></p>
+                        <button class="btn btn--primary" data-add-to-cart data-id="look3"
+                            data-name="Образ «Городской хаки» (мужской)" data-price="17490">
+                            Добавить образ в корзину
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Готовые образы.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

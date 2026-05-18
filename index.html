@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Earthwear — интернет-магазин одежды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Интернет-магазин одежды для мужчин и женщин, украшения и готовые образы в природной цветовой гамме.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link nav__link--active">Главная</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="looks.html" class="nav__link">Образы</a>
+                <a href="orders.html" class="nav__link">Заказы</a>
+                <a href="cart.html" class="nav__link">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero-блок -->
+        <section class="hero hero--dark">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="hero__badge">Онлайн-магазин вдохновлённый природой</p>
+                    <h1 class="hero__title">Гардероб, который говорит о вашем вкусе без лишних слов</h1>
+                    <p class="hero__subtitle">
+                        Одежда для мужчин и женщин, минималистичные украшения и готовые образы
+                        в натуральной палитре — от землистых бежевых до глубокого синего.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="catalog.html" class="btn btn--primary">Перейти в каталог</a>
+                        <a href="looks.html" class="btn btn--ghost">Посмотреть образы</a>
+                    </div>
+                    <div class="hero__promo">
+                        <p>Скидка <strong>15%</strong> на первый заказ. Используйте промокод <span
+                                class="hero__promo-code">STORE15</span>.</p>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="media/Шоколадный латте.png" alt="Ваш баннер / фото витрины" class="hero__image--mock">
+                </div>
+            </div>
+        </section>
+
+        <!-- Ассортимент в стиле презентации -->
+        <section class="section section--earth" id="assortment">
+            <div class="container assortment">
+                <div class="assortment__text">
+                    <h2 class="section__title section__title--light">Ассортимент</h2>
+                    <p class="section__lead">
+                        В нашем магазине представлена одежда, вдохновлённая естественной красотой мира.
+                        Мы создаём гардероб, который подчёркивает вашу индивидуальность и остаётся актуальным в любом
+                        сезоне.
+                    </p>
+
+                    <!-- Цветовая палитра как на слайде -->
+                    <div class="color-palette">
+                        <div class="color-swatch color-swatch--brown" title="Тёплый коричневый"></div>
+                        <div class="color-swatch color-swatch--mauve" title="Пыльная листвяная слива"></div>
+                        <div class="color-swatch color-swatch--beige" title="Бежевый песок"></div>
+                        <div class="color-swatch color-swatch--sand" title="Тёплый кремовый"></div>
+                        <div class="color-swatch color-swatch--olive" title="Природный хаки"></div>
+                        <div class="color-swatch color-swatch--blue" title="Глубокий синий"></div>
+                        <div class="color-swatch color-swatch--pink" title="Акцентный розовый"></div>
+                    </div>
+
+                    <div class="assortment__features">
+                        <div class="assortment-feature">
+                            <h3 class="assortment-feature__title">Классика Земли</h3>
+                            <p class="assortment-feature__text">
+                                Коричневые, бежевые и молочно‑оливковые оттенки — фундамент стильных базовых образов
+                                для повседневной жизни.
+                            </p>
+                        </div>
+                        <div class="assortment-feature">
+                            <h3 class="assortment-feature__title">Природный Хаки</h3>
+                            <p class="assortment-feature__text">
+                                Цвет практичности и спокойствия. Идеален для городских и прогулочных образов в стиле
+                                casual.
+                            </p>
+                        </div>
+                        <div class="assortment-feature">
+                            <h3 class="assortмент-feature__title">Глубокий Синий</h3>
+                            <p class="assortment-feature__text">
+                                Акцентный оттенок для деловых встреч и вечерних выходов. Сочетается с тёплым бежевым
+                                и холодным металлом украшений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Примеры образов -->
+                <div class="assortment__examples">
+                    <div class="assortment-block">
+                        <p class="assortment-block__title">Примеры образов для женского пола</p>
+                        <div class="assortment-block__photos">
+                            <div class="photo-frame">
+                                <img src="media/Винное.jpeg" alt="Фото look 1 женский" class="photo-frame__placeholder">
+                            </div>
+                            <div class="photo-frame">
+                                <img src="media/Тёплый песок.jpeg" alt="Фото look 2 женский"
+                                    class="photo-frame__placeholder">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assortment-block">
+                        <p class="assortment-block__title">Примеры образов для мужского пола</p>
+                        <div class="assortment-block__photos">
+                            <div class="photo-frame">
+                                <img src="media/Песочный берег.jpeg" alt="Фото look 1 мужской"
+                                    class="photo-frame__placeholder">
+                            </div>
+                            <div class="photo-frame">
+                                <img src="media/Глубокий индиго.jpeg" alt="Фото look 2 мужской"
+                                    class="photo-frame__placeholder">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="assortment__note">
+                        К каждому образу мы подбираем украшения и аксессуары в одной цветовой истории —
+                        чтобы вы могли собрать комплект «под ключ» за несколько кликов.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с категориями -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Коллекции</h2>
+                <div class="category-grid">
+                    <article class="category-card">
+                        <h3 class="category-card__title">Женская одежда</h3>
+                        <p class="category-card__text">
+                            Платья, костюмы, трикотаж и верхняя одежда в мягких природных оттенках.
+                        </p>
+                        <a href="catalog.html#women" class="btn btn--secondary">Перейти в раздел</a>
+                    </article>
+
+                    <article class="category-card">
+                        <h3 class="category-card__title">Мужская одежда</h3>
+                        <p class="category-card__text">
+                            Рубашки, брюки, костюмы и базовые футболки в сдержанной, но выразительной палитре.
+                        </p>
+                        <a href="catalog.html#men" class="btn btn--secondary">Перейти в раздел</a>
+                    </article>
+
+                    <article class="category-card">
+                        <h3 class="category-card__title">Украшения</h3>
+                        <p class="category-card__text">
+                            Минималистичные серьги, кольца и браслеты из металла и камня, идеально сочетающиеся
+                            с нашими капсульными коллекциями.
+                        </p>
+                        <a href="catalog.html#jewelry" class="btn btn--secondary">Смотреть украшения</a>
+                    </article>
+
+                    <article class="category-card">
+                        <h3 class="category-card__title">Готовые образы</h3>
+                        <p class="category-card__text">
+                            Собранные стилистом комплекты для разных случаев: от офиса до вечерних прогулок.
+                        </p>
+                        <a href="looks.html" class="btn btn--secondary">Открыть лукбук</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Популярные позиции</h2>
+                <div class="product-grid">
+                    <!-- Женский костюм -->
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="media/Шоколадный латте.png" alt="Костюм «Шоколадный латте»"
+                                class="img-placeholder">
+                        </div>
+                        <h3 class="product-card__title">Костюм «Шоколадный латте»</h3>
+                        <p class="product-card__subtitle">жакет и широкие брюки, вискоза</p>
+                        <p class="product-card__price" data-price="12990">12 990 ₽</p>
+                        <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w1"
+                            data-name="Костюм «Шоколадный латте»" data-price="12990">
+                            В корзину
+                        </button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="media/Винное.jpeg" alt="Платье миди бордового цвета" class="img-placeholder">
+                        </div>
+                        <h3 class="product-card__title">Платье миди «Винное»</h3>
+                        <p class="product-card__subtitle">мягкий трикотаж, приталенный крой</p>
+                        <p class="product-card__price" data-price="8990">8 990 ₽</p>
+                        <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w2"
+                            data-name="Платье миди «Винное»" data-price="8990">
+                            В корзину
+                        </button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="media/Песочный берег.jpeg" alt="Мужской костюм песочного цвета"
+                                class="img-placeholder">
+                        </div>
+                        <h3 class="product-card__title">Костюм «Песочный берег»</h3>
+                        <p class="product-card__subtitle">лен и хлопок, расслабленный крой</p>
+                        <p class="product-card__price" data-price="14990">14 990 ₽</p>
+                        <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m1"
+                            data-name="Костюм «Песочный берег»" data-price="14990">
+                            В корзину
+                        </button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image">
+                            <img src="media/Тёплый металл.jpeg" alt="Минималистичные серьги-кольца"
+                                class="img-placeholder">
+                        </div>
+                        <h3 class="product-card__title">Серьги-кольца «Тёплый металл»</h3>
+                        <p class="product-card__subtitle">сталь с покрытием под золото</p>
+                        <p class="product-card__price" data-price="2990">2 990 ₽</p>
+                        <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j1"
+                            data-name="Серьги-кольца «Тёплый металл»" data-price="2990">
+                            В корзину
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Интернет-магазин одежды и украшений.</p>
+            <p><a href="catalog.html" class="footer__link">Каталог</a> · <a href="looks.html"
+                    class="footer__link">Образы</a> · <a href="cart.html" class="footer__link">Корзина</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

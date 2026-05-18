@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина — Earthwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Корзина интернет-магазина Earthwear.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="looks.html" class="nav__link">Образы</a>
+                <a href="orders.html" class="nav__link">Заказы</a>
+                <a href="cart.html" class="nav__link nav__link--active">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section__title">Корзина</h1>
+
+            <div id="cart-empty" class="cart-empty">
+                Ваша корзина пуста. <a href="catalog.html">Перейти в каталог</a> или <a href="looks.html">выбрать
+                    готовый образ</a>.
+            </div>
+
+            <div id="cart-content" class="cart" style="display: none;">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Товар / образ</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Сумма</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                </table>
+
+                <div class="cart-promo">
+                    <label for="promo-code-input">Промокод</label>
+                    <div class="cart-promo__row">
+                        <input id="promo-code-input" type="text" placeholder="Введите код" />
+                        <button id="promo-apply-btn" class="btn btn--secondary" type="button">Применить</button>
+                    </div>
+                    <p id="promo-message" class="cart-promo__message">Введите промокод для скидки.</p>
+                </div>
+
+                <div class="cart-details">
+                    <div class="cart-detail-row"><span>Товары</span><span id="cart-subtotal">0 ₽</span></div>
+                    <div class="cart-detail-row"><span>Скидка</span><span id="cart-discount">0 ₽</span></div>
+                    <div class="cart-detail-row"><span>Доставка</span><span id="cart-delivery">Бесплатно</span></div>
+                    <div class="cart-detail-row cart-detail-row--total"><span>Итого к оплате</span><span
+                            id="cart-final-price">0 ₽</span></div>
+                </div>
+
+                <div class="cart-actions">
+                    <button id="checkout-btn" class="btn btn--primary" type="button">Оформить заказ</button>
+                    <a href="orders.html" class="btn btn--secondary">Мои заказы</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно оплаты -->
+    <div id="payment-modal" class="modal" style="display: none;">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="payment-spinner"></div>
+                <h3 class="modal__title">Ждём оплату...</h3>
+                <p class="modal__text">Обработка платежа может занять несколько секунд</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Корзина.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

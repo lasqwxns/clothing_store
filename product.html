@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Костюм «Шоколадный латте» — Earthwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Женский костюм «Шоколадный латте» — жакет и широкие брюки в тёплом коричневом оттенке.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="looks.html" class="nav__link">Образы</a>
+                <a href="orders.html" class="nav__link">Заказы</a>
+                <a href="cart.html" class="nav__link">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="catalog.html">Каталог</a> /
+                <span>Костюм «Шоколадный латте»</span>
+            </nav>
+
+            <div class="product-page">
+                <div class="product-page__gallery">
+                    <div class="product-page__image-main">
+                        <img src="media/Шоколадный латте.jpeg" alt="Костюм «Шоколадный латте»"
+                            class="img-placeholder img-placeholder--large">
+                    </div>
+                    <div class="product-page__thumbs">
+                        <img src="media/Шоколадный латте.jpeg" alt="Вид спереди"
+                            class="img-placeholder img-placeholder--thumb">
+                        <img src="media/Шоколадный латте.jpeg" alt="Вид сбоку"
+                            class="img-placeholder img-placeholder--thumb">
+                        <img src="media/Шоколадный латте.jpeg" alt="Детали ткани"
+                            class="img-placeholder img-placeholder--thumb">
+                    </div>
+                </div>
+
+                <div class="product-page__info">
+                    <h1 class="product-page__title">Костюм «Шоколадный латте»</h1>
+                    <p class="product-page__sku">Артикул: EW‑W‑SUIT‑01</p>
+                    <p class="product-page__price" data-price="12990">12 990 ₽</p>
+
+                    <div class="product-page__actions">
+                        <label class="qty">
+                            Размер:
+                            <select class="select">
+                                <option>XS</option>
+                                <option selected>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </label>
+
+                        <label class="qty">
+                            Количество:
+                            <input type="number" id="product-qty" min="1" value="1">
+                        </label>
+
+                        <button class="btn btn--primary" data-add-to-cart data-id="w1"
+                            data-name="Костюм «Шоколадный латте»" data-price="12990" data-qty-input="product-qty">
+                            Добавить в корзину
+                        </button>
+                    </div>
+
+                    <div class="product-page__description">
+                        <h2>Описание</h2>
+                        <p>
+                            Двухпредметный костюм из мягкой вискозы в тёплом коричневом оттенке. Жакет свободного
+                            кроя на одной пуговице и широкие брюки с высокой посадкой создают вытянутый силуэт
+                            и подходят как для офиса, так и для неформальных встреч.
+                        </p>
+
+                        <h3>Состав и уход</h3>
+                        <ul>
+                            <li>Основная ткань: 65% вискоза, 30% полиэстер, 5% эластан</li>
+                            <li>Подкладка жакета: 100% вискоза</li>
+                            <li>Рекомендуемая стирка: деликатный режим при 30°C, не отбеливать</li>
+                        </ul>
+
+                        <h3>С чем сочетать</h3>
+                        <ul>
+                            <li>Топ или водолазка молочного оттенка</li>
+                            <li>Серьги‑кольца «Тёплый металл»</li>
+                            <li>Обувь в цвете карамели или чёрном</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Страница товара.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

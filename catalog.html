@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог — Earthwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог одежды для мужчин и женщин, украшений и аксессуаров Earthwear.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="catalog.html" class="nav__link nav__link--active">Каталог</a>
+                <a href="looks.html" class="nav__link">Образы</a>
+                <a href="orders.html" class="nav__link">Заказы</a>
+                <a href="cart.html" class="nav__link">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section__title">Каталог одежды и украшений</h1>
+
+            <div class="catalog__layout">
+                <aside class="sidebar">
+                    <h2 class="sidebar__title">Фильтр по разделам</h2>
+                    <div class="sidebar__block">
+                        <p class="sidebar__label">Категория</p>
+                        <ul class="sidebar__list">
+                            <li><button class="filter-btn" data-category="all">Все товары</button></li>
+                            <li><button class="filter-btn" data-category="women" id="women">Женская одежда</button></li>
+                            <li><button class="filter-btn" data-category="men" id="men">Мужская одежда</button></li>
+                            <li><button class="filter-btn" data-category="jewelry" id="jewelry">Украшения</button></li>
+                            <li><button class="filter-btn" data-category="accessories" id="accessories">Аксессуары</button></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="catalog__content">
+                    <div class="product-grid">
+
+                        <!-- Женская одежда -->
+                        <article class="product-card" data-category="women">
+                            <a href="product.html" class="product-card__link">
+                                <div class="product-card__image">
+                                    <img src="media/Шоколадный латте.png" alt="Костюм «Шоколадный латте»"
+                                        class="img-placeholder">
+                                </div>
+                                <h3 class="product-card__title">Костюм «Шоколадный латте»</h3>
+                            </a>
+                            <p class="product-card__subtitle">жакет и брюки, шоколадный оттенок</p>
+                            <p class="product-card__price" data-price="12990">12 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w1"
+                                data-name="Костюм «Шоколадный латте»" data-price="12990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/Винное.jpeg" alt="Платье «Винное»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Платье миди «Винное»</h3>
+                            <p class="product-card__subtitle">бордовый оттенок, мягкий трикотаж</p>
+                            <p class="product-card__price" data-price="8990">8 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w2"
+                                data-name="Платье миди «Винное»" data-price="8990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/Тёплый песок.jpeg" alt="Кардиган «Тёплый песок»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Кардиган «Тёплый песок»</h3>
+                            <p class="product-card__subtitle">объёмная вязка, бежевый меланж</p>
+                            <p class="product-card__price" data-price="7490">7 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w3"
+                                data-name="Кардиган «Тёплый песок»" data-price="7490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <!-- Мужская одежда -->
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/Песочный берег.jpeg" alt="Костюм «Песочный берег»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Песочный берег»</h3>
+                            <p class="product-card__subtitle">лен, расслабленный силуэт</p>
+                            <p class="product-card__price" data-price="14990">14 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m1"
+                                data-name="Костюм «Песочный берег»" data-price="14990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/Глубокий индиго.jpeg" alt="Жилет «Глубокий индиго»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Жилет «Глубокий индиго»</h3>
+                            <p class="product-card__subtitle">структурный крой и насыщенный синий оттенок</p>
+                            <p class="product-card__price" data-price="4990">4 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m2"
+                                data-name="Жилет «Глубокий индиго»" data-price="4990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/Хаки-сити.jpeg" alt="Костюм «Хаки-сити»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Хаки-сити»</h3>
+                            <p class="product-card__subtitle">светлая база и брюки приглушённого хаки</p>
+                            <p class="product-card__price" data-price="5990">5 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m3"
+                                data-name="Костюм «Хаки-сити»" data-price="5990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <!-- Украшения -->
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/Тёплый металл.jpeg" alt="Серьги-кольца «Тёплый металл»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Серьги-кольца «Тёплый металл»</h3>
+                            <p class="product-card__subtitle">минималистичный дизайн</p>
+                            <p class="product-card__price" data-price="2990">2 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j1"
+                                data-name="Серьги-кольца «Тёплый металл»" data-price="2990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/a_Delicate_thin_chain_.png" alt="Колье «Тонкая линия»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Колье «Тонкая линия»</h3>
+                            <p class="product-card__subtitle">деликатная цепочка с небольшим светлым кулоном</p>
+                            <p class="product-card__price" data-price="3490">3 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j2"
+                                data-name="Колье «Тонкая линия»" data-price="3490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/b_Minimalist_bracelet_.jpeg" alt="Браслет «Глубокий синий»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Браслет «Глубокий синий»</h3>
+                            <p class="product-card__subtitle">переплетённые шнуры и металлическая фурнитура</p>
+                            <p class="product-card__price" data-price="2590">2 590 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j3"
+                                data-name="Браслет «Глубокий синий»" data-price="2590">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <!-- Новые аксессуары -->
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/a_Minimalist_warm_beig.png" alt="Кольцо «Тёплый беж»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Кольцо «Тёплый беж»</h3>
+                            <p class="product-card__subtitle">широкая гладкая форма в мягком бежевом оттенке</p>
+                            <p class="product-card__price" data-price="2990">2 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j4"
+                                data-name="Кольцо «Тёплый беж»" data-price="2990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/a_Minimalist_gold-tone.png" alt="Кольцо «Золотой блеск»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Кольцо «Песочная линия»</h3>
+                            <p class="product-card__subtitle">тонкий ободок с гладкой текстурой</p>
+                            <p class="product-card__price" data-price="1990">1 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j5"
+                                data-name="Кольцо «Песочная линия»" data-price="1990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/a_Elegant_cappuccino-c.png" alt="Сумка «Капучино»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Сумка «Капучино»</h3>
+                            <p class="product-card__subtitle">структурированная форма и тёплый карамельный тон</p>
+                            <p class="product-card__price" data-price="7290">7 290 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a1"
+                                data-name="Сумка «Капучино»" data-price="7290">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/a_Minimalist_thin_gold.png" alt="Серьги «Тонкое золото»"
+                                    class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Серьги «Тонкое золото»</h3>
+                            <p class="product-card__subtitle">лёгкие кольца с тёплым металлическим блеском</p>
+                            <p class="product-card__price" data-price="2490">2 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j7"
+                                data-name="Серьги «Тонкое золото»" data-price="2490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="jewelry">
+                            <div class="product-card__image">
+                                <img src="media/a_Small_organic_pendan.png" alt="Подвеска «Сухой лист»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Подвеска «Сухой лист»</h3>
+                            <p class="product-card__subtitle">небольшой кулон с природной текстурой</p>
+                            <p class="product-card__price" data-price="2790">2 790 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="j8"
+                                data-name="Подвеска «Сухой лист»" data-price="2790">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <!-- Новые товары из оставшихся фотографий -->
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/1.png" alt="Комплект «Утренний мокко»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Комплект «Утренний мокко»</h3>
+                            <p class="product-card__subtitle">мягкий жакет и базовый низ в кофейной гамме</p>
+                            <p class="product-card__price" data-price="11990">11 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w4"
+                                data-name="Комплект «Утренний мокко»" data-price="11990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/2.png" alt="Образ «Винный вечер»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Образ «Винный вечер»</h3>
+                            <p class="product-card__subtitle">бордовое платье и короткий жакет для выхода</p>
+                            <p class="product-card__price" data-price="13990">13 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w10"
+                                data-name="Образ «Винный вечер»" data-price="13990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/3.png" alt="Образ «Светлый контраст»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Образ «Светлый контраст»</h3>
+                            <p class="product-card__subtitle">пиджак, светлые брюки и собранный городской силуэт</p>
+                            <p class="product-card__price" data-price="14990">14 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m9"
+                                data-name="Образ «Светлый контраст»" data-price="14990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/a_Glossy_beige_female_.png" alt="Костюм «Графитовый беж»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Графитовый беж»</h3>
+                            <p class="product-card__subtitle">жакет и брюки с мягким серым подтоном</p>
+                            <p class="product-card__price" data-price="13990">13 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w5"
+                                data-name="Костюм «Графитовый беж»" data-price="13990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/a_Glossy_beige_male_ma (1).png" alt="Рубашка «Винный тон»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Рубашка «Винный тон»</h3>
+                            <p class="product-card__subtitle">глубокий бордовый оттенок и светлые брюки</p>
+                            <p class="product-card__price" data-price="10990">10 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m5"
+                                data-name="Рубашка «Винный тон»" data-price="10990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/a_Glossy_beige_male_ma (2).png" alt="Образ «Оливковый баланс»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Образ «Оливковый баланс»</h3>
+                            <p class="product-card__subtitle">серая куртка, светлая база и брюки оттенка хаки</p>
+                            <p class="product-card__price" data-price="5490">5 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m6"
+                                data-name="Образ «Оливковый баланс»" data-price="5490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/b_Elegant_cappuccino-c.jpeg" alt="Сумка «Мягкий капучино»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Сумка «Мягкий капучино»</h3>
+                            <p class="product-card__subtitle">объёмная форма с короткой ручкой</p>
+                            <p class="product-card__price" data-price="7990">7 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a2"
+                                data-name="Сумка «Мягкий капучино»" data-price="7990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_female_.jpeg" alt="Костюм «Светлый латте»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Светлый латте»</h3>
+                            <p class="product-card__subtitle">жакет и брюки в мягком деловом настроении</p>
+                            <p class="product-card__price" data-price="13490">13 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w7"
+                                data-name="Костюм «Светлый латте»" data-price="13490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_female_ (1).jpeg" alt="Пальто «Тёплая глина»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Пальто «Тёплая глина»</h3>
+                            <p class="product-card__subtitle">длинный силуэт и мягкий терракотовый оттенок</p>
+                            <p class="product-card__price" data-price="15990">15 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w8"
+                                data-name="Пальто «Тёплая глина»" data-price="15990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_female_ (2).jpeg" alt="Костюм «Синий акцент»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Синий акцент»</h3>
+                            <p class="product-card__subtitle">яркий жакет и брюки в глубоком синем цвете</p>
+                            <p class="product-card__price" data-price="12990">12 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w9"
+                                data-name="Костюм «Синий акцент»" data-price="12990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_male_ma (1).jpeg" alt="Образ «Серый хаки»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Образ «Серый хаки»</h3>
+                            <p class="product-card__subtitle">серый жакет, светлая футболка и брюки цвета хаки</p>
+                            <p class="product-card__price" data-price="12990">12 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m7"
+                                data-name="Образ «Серый хаки»" data-price="12990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_male_ma (2).jpeg" alt="Костюм «Серый штиль»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Серый штиль»</h3>
+                            <p class="product-card__subtitle">свободный комплект в спокойном сером оттенке</p>
+                            <p class="product-card__price" data-price="13990">13 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m8"
+                                data-name="Костюм «Серый штиль»" data-price="13990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/a_Deep_indigo_structur.png" alt="Шляпа «Глубокий индиго»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Шляпа «Глубокий индиго»</h3>
+                            <p class="product-card__subtitle">широкие поля и насыщенный синий оттенок</p>
+                            <p class="product-card__price" data-price="3990">3 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a3"
+                                data-name="Шляпа «Глубокий индиго»" data-price="3990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/a_Large_graphite_grey_.png" alt="Сумка «Графит»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Сумка «Графит»</h3>
+                            <p class="product-card__subtitle">крупный шоппер с контрастной тёмной ручкой</p>
+                            <p class="product-card__price" data-price="8490">8 490 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a4"
+                                data-name="Сумка «Графит»" data-price="8490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/a_Soft_structured_choc.png" alt="Шляпа «Шоколадный фетр»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Шляпа «Шоколадный фетр»</h3>
+                            <p class="product-card__subtitle">мягкая структурная форма в тёплом коричневом цвете</p>
+                            <p class="product-card__price" data-price="4290">4 290 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a5"
+                                data-name="Шляпа «Шоколадный фетр»" data-price="4290">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-card__image">
+                                <img src="media/b_Elegant_wide-brim_be.jpeg" alt="Шляпа «Бежевые поля»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Шляпа «Бежевые поля»</h3>
+                            <p class="product-card__subtitle">элегантные широкие поля и светлая нейтральная база</p>
+                            <p class="product-card__price" data-price="4590">4 590 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="a6"
+                                data-name="Шляпа «Бежевые поля»" data-price="4590">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/b_Glossy_beige_female_ (3).jpeg" alt="Платье «Молочный силуэт»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Платье «Молочный силуэт»</h3>
+                            <p class="product-card__subtitle">асимметричная драпировка и мягкий светлый тон</p>
+                            <p class="product-card__price" data-price="8990">8 990 ₽</p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w11"
+                                data-name="Платье «Молочный силуэт»" data-price="8990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-30.jpg" alt="Платье «Жемчужная ночь»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Платье «Жемчужная ночь» (ХИТ)</h3>
+                            <p class="product-card__subtitle">Элегантное платье с акцентным бантом и деликатным декором. Контраст черного и молочного создает образ утонченной вечерней классики.</p>
+                            <p class="product-card__price" data-price="5990"><span class="product-card__price-old">7 490 ₽</span><span class="product-card__price-new">5 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w12"
+                                data-name="Платье «Жемчужная ночь»" data-price="5990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-29 (2).jpg" alt="Джемпер «Интеллектуальная эстетика»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Джемпер «Интеллектуальная эстетика»</h3>
+                            <p class="product-card__subtitle">Многослойный образ в духе современной аристократии. Идеальное сочетание уюта, структуры и продуманного стиля.</p>
+                            <p class="product-card__price" data-price="4490"><span class="product-card__price-old">5 490 ₽</span><span class="product-card__price-new">4 490 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w13"
+                                data-name="Джемпер «Интеллектуальная эстетика»" data-price="4490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-29.jpg" alt="Поло «Пудровая нежность»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Поло «Пудровая нежность»</h3>
+                            <p class="product-card__subtitle">Женственный силуэт и мягкий оттенок подчеркивают деликатность образа. Идеально для романтичных и легких сочетаний.</p>
+                            <p class="product-card__price" data-price="3490"><span class="product-card__price-old">4 290 ₽</span><span class="product-card__price-new">3 490 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w14"
+                                data-name="Поло «Пудровая нежность»" data-price="3490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-28.jpg" alt="Костюм «Скульптура силуэта»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Скульптура силуэта»</h3>
+                            <p class="product-card__subtitle">Архитектурный крой подчеркивает фигуру и создает эффектный образ. Современная элегантность с акцентом на линии.</p>
+                            <p class="product-card__price" data-price="7990"><span class="product-card__price-old">9 490 ₽</span><span class="product-card__price-new">7 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w15"
+                                data-name="Костюм «Скульптура силуэта»" data-price="7990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-27 (2).jpg" alt="Пиджак «Золотой деним»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Пиджак «Золотой деним»</h3>
+                            <p class="product-card__subtitle">Классика в новом прочтении: плотный деним и выразительная фурнитура создают статусный повседневный образ.</p>
+                            <p class="product-card__price" data-price="6490"><span class="product-card__price-old">7 990 ₽</span><span class="product-card__price-new">6 490 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w16"
+                                data-name="Пиджак «Золотой деним»" data-price="6490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-27.jpg" alt="Костюм «Полночная элегантность»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Полночная элегантность»</h3>
+                            <p class="product-card__subtitle">Сдержанная роскошь в глубоком оттенке navy. Декоративный шарф придает образу благородство и завершенность.</p>
+                            <p class="product-card__price" data-price="7480"><span class="product-card__price-old">9 980 ₽</span><span class="product-card__price-new">7 480 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w17"
+                                data-name="Костюм «Полночная элегантность»" data-price="7480">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-26 (2).jpg" alt="Костюм «Бежевая симфония»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Бежевая симфония» (ХИТ)</h3>
+                            <p class="product-card__subtitle">Элегантный силуэт, подчеркивающий линию талии. Воплощение современной женственности и безупречного вкуса.</p>
+                            <p class="product-card__price" data-price="8990"><span class="product-card__price-old">10 990 ₽</span><span class="product-card__price-new">8 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w18"
+                                data-name="Костюм «Бежевая симфония»" data-price="8990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-26.jpg" alt="Брюки «Светская легкость»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Брюки «Светская легкость»</h3>
+                            <p class="product-card__subtitle">Лаконичный крой и воздушный оттенок делают модель идеальной для утонченных дневных образов.</p>
+                            <p class="product-card__price" data-price="3490"><span class="product-card__price-old">4 290 ₽</span><span class="product-card__price-new">3 490 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w19"
+                                data-name="Брюки «Светская легкость»" data-price="3490">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-25 (2).jpg" alt="Брюки «Вневременная классика»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Брюки «Вневременная классика»</h3>
+                            <p class="product-card__subtitle">Свежесть, минимализм и визуальная легкость - для образов с ноткой утонченной роскоши.</p>
+                            <p class="product-card__price" data-price="3990"><span class="product-card__price-old">4 990 ₽</span><span class="product-card__price-new">3 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w20"
+                                data-name="Брюки «Вневременная классика»" data-price="3990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-25.jpg" alt="Костюм «Курортная элегантность»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Курортная элегантность»</h3>
+                            <p class="product-card__subtitle">Легкий комплект для отдыха в стиле luxury. Комфорт и стиль в каждой детали.</p>
+                            <p class="product-card__price" data-price="5990"><span class="product-card__price-old">6 990 ₽</span><span class="product-card__price-new">5 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m10"
+                                data-name="Костюм «Курортная элегантность»" data-price="5990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-24 (2).jpg" alt="Костюм «Городская икона»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Городская икона» (ХИТ)</h3>
+                            <p class="product-card__subtitle">Современная интерпретация денима с акцентом на тренды и уверенный стиль.</p>
+                            <p class="product-card__price" data-price="6990"><span class="product-card__price-old">8 490 ₽</span><span class="product-card__price-new">6 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w21"
+                                data-name="Костюм «Городская икона»" data-price="6990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-24.jpg" alt="Комплект «Контрастная гармония»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Комплект «Контрастная гармония»</h3>
+                            <p class="product-card__subtitle">Игра черного и белого в элегантном исполнении. Идеален для повседневной роскоши.</p>
+                            <p class="product-card__price" data-price="4990"><span class="product-card__price-old">5 990 ₽</span><span class="product-card__price-new">4 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w22"
+                                data-name="Комплект «Контрастная гармония»" data-price="4990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-23 (2).jpg" alt="Жакет «Синяя грация»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Жакет «Синяя грация»</h3>
+                            <p class="product-card__subtitle">Женственный силуэт и благородный оттенок для теплого сезона и делового настроения.</p>
+                            <p class="product-card__price" data-price="4990"><span class="product-card__price-old">5 990 ₽</span><span class="product-card__price-new">4 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w23"
+                                data-name="Жакет «Синяя грация»" data-price="4990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-23.jpg" alt="Костюм «Бордовая драма»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Костюм «Бордовая драма»</h3>
+                            <p class="product-card__subtitle">Выразительный комплект для эффектных выходов. Подчеркивает индивидуальность и стиль.</p>
+                            <p class="product-card__price" data-price="7990"><span class="product-card__price-old">9 490 ₽</span><span class="product-card__price-new">7 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="w24"
+                                data-name="Костюм «Бордовая драма»" data-price="7990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-22 (2).jpg" alt="Мужской костюм «Современный аристократ»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Мужской костюм «Современный аристократ»</h3>
+                            <p class="product-card__subtitle">Сдержанная палитра и продуманный крой создают образ уверенного и стильного мужчины.</p>
+                            <p class="product-card__price" data-price="8990"><span class="product-card__price-old">10 990 ₽</span><span class="product-card__price-new">8 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m11"
+                                data-name="Мужской костюм «Современный аристократ»" data-price="8990">
+                                В корзину
+                            </button>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-card__image">
+                                <img src="media/photo_2026-05-18_20-53-22.jpg" alt="Брюки «Городская глубина»" class="img-placeholder">
+                            </div>
+                            <h3 class="product-card__title">Брюки «Городская глубина»</h3>
+                            <p class="product-card__subtitle">Глубокий оттенок и свободный силуэт для динамичных и элегантных образов.</p>
+                            <p class="product-card__price" data-price="3990"><span class="product-card__price-old">4 990 ₽</span><span class="product-card__price-new">3 990 ₽</span></p>
+                            <button class="btn btn--primary product-card__btn" data-add-to-cart data-id="m12"
+                                data-name="Брюки «Городская глубина»" data-price="3990">
+                                В корзину
+                            </button>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Каталог одежды и украшений.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

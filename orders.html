@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мои заказы — Earthwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="История заказов интернет-магазина Earthwear.">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo" aria-label="Earthwear">
+                <img src="media/logo.png" alt="Earthwear">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
+                <a href="looks.html" class="nav__link">Образы</a>
+                <a href="orders.html" class="nav__link nav__link--active">Заказы</a>
+                <a href="cart.html" class="nav__link">
+                    Корзина
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section__title">Мои заказы</h1>
+            <p class="section__lead">Здесь сохраняются все оформленные заказы, сделанные в этом браузере.</p>
+
+            <div id="orders-empty" class="cart-empty">
+                Заказов пока нет. <a href="catalog.html">Перейти в каталог</a> и оформить первый заказ.
+            </div>
+
+            <div id="orders-list" class="orders-list" style="display: none;"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Earthwear. Заказы.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
