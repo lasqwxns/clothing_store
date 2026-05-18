@@ -1064,11 +1064,15 @@ img.img-placeholder {
         height: auto;
         gap: 8px;
         justify-content: center;
-        padding: 8px 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     .nav {
+        max-width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
+        row-gap: 6px;
     }
 
     .hero__image--mock {
